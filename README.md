@@ -26,7 +26,7 @@ Given the configuration
 }
 ```
 
-The file [./bin/mocha-current-file.js](mocha-current-file) does the following:
+The file [./bin/mocha-current-file.js](./bin/mocha-current-file) does the following:
   - consumes the `${file}` argument, which is the currently focused file in the vscode editor.  In this example, it is `src/index.unit.ts`
   - determines the name and location of the compiled typescript file, in this case, `dist/index.unit.js`
   - Shows an (unfollowed) example of a setup where there might be complicated "before all test" setup, e.g. for cleanly creating and tearing down databases.
