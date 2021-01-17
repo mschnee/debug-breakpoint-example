@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations":[ 
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Current Test File",
+      "program": "${workspaceFolder}/bin/mocha-current-file",
+      "args": [
+        "${file}"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist"
+      ],
+      "runtimeArgs": ["--nolazy","--trace-deprecation","--trace-warnings"],
+      "trace": true,
+      "sourceMaps": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    }
+  ]
+}
