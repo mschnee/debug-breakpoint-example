@@ -1,5 +1,14 @@
 This repository exposes an issue with using `vscode-js-debug` in the cases where `program` is a wrapper used to determine an actual file.
 
+For purposes of the example, the compiled files and sourcemaps are available in `./dist`
+
+# Setup
+```
+npm install
+```
+
+# The Problem
+
 Given the configuration
 ```json
 {
